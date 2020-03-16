@@ -1,22 +1,21 @@
-import Head from 'next/head'
-import React from "react"
-import Link from 'next/link'
-import Header from "../components/Header";
+import React from 'react';
+import Link from 'next/link';
+import Header from '../components/Header';
 
 const Home = () => (
-    <div className="container">
-        <Header>
-        </Header>
+  <div className="container">
+    <Header />
 
-        <main>
-            <div>
-                <h1>Home page</h1>
-                <Link href={'/blog'}>
-                    <a>Blog</a>
-                </Link>
-            </div>
-        </main>
-        <style jsx>{`
+    <main>
+      <div>
+        <h1>Home page</h1>
+        <Link href="/blog">
+          <p>Blog</p>
+        </Link>
+      </div>
+    </main>
+    <style jsx>
+      {`
       .container {
         min-height: 100vh;
         padding: 0 0.5rem;
@@ -122,9 +121,11 @@ const Home = () => (
           flex-direction: column;
         }
       }
-    `}</style>
+    `}
+    </style>
 
-        <style jsx global>{`
+    <style jsx global>
+      {`
       html,
       body {
         padding: 0;
@@ -136,8 +137,9 @@ const Home = () => (
       * {
         box-sizing: border-box;
       }
-    `}</style>
-    </div>
-)
+    `}
+    </style>
+  </div>
+);
 
-export default Home
+export default Home;
