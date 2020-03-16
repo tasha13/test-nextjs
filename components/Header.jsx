@@ -4,13 +4,13 @@ import posts from '../posts';
 
 export default () => (
   <ul>
-    {Object.entries(posts).map((post, index) => (
-      <li key={index}>
+    {Object.entries(posts).map((post) => (
+      <li>
         <Link href="blog/[id]" as={`blog/${post[0]}`}>
-          <a>
+          <p>
             {post[1].title}
             {' '}
-          </a>
+          </p>
         </Link>
       </li>
     ))}

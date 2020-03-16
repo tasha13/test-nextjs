@@ -1,10 +1,10 @@
 export default {
-    test: {
-        title: "test post",
-        content: "Hey some post content"
-    },
-    second: {
-        title: "second post",
-        content: "Hey this is the second post content"
-    }
-}
+  test: {
+    title: 'test post',
+    content: 'Hey some post content',
+  },
+  second: {
+    title: 'second post',
+    content: 'Hey this is the second post content',
+  },
+};

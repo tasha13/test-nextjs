@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const CustomLink = ({ href, children }) => {
   const router = useRouter();
@@ -11,5 +12,10 @@ const CustomLink = ({ href, children }) => {
       )
     </Link>
   );
+};
+
+CustomLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 export default CustomLink;
